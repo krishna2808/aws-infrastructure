@@ -1,0 +1,44 @@
+# Terraform files
+*.tfstate
+*.tfstate.backup
+*.tfvars
+
+# Crash log files
+crash.log
+
+# Terraform lock file
+.terraform.lock.hcl
+
+# Local .terraform directories
+**/.terraform/*
+
+# Ignore private key files
+*.pem
+
+# Ignore sensitive variable files
+*.tfvars.json
+
+# Ignore editor and IDE files
+.vscode/
+.idea/
+*.swp
+*~
+
+# Ignore backup files
+*.bak
+
+# Ignore OS-specific files
+.DS_Store
+Thumbs.db
+
+# Ignore other sensitive files
+*.bak
+*.log
+*.tmp
+*.old
+
+# Ignore temporary files
+*.temp
+*.tmp
+
+.terraform/
