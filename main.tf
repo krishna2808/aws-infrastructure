@@ -1,3 +1,31 @@
+terraform {
+  required_providers {
+    aws = {
+      source  = "hashicorp/aws"
+      version = ">= 5.50.0"
+    }
+    local = {
+      source  = "hashicorp/local"
+      version = "2.5.1"
+    }
+    null = {
+      source  = "hashicorp/null"
+      version = "3.2.2"
+    }
+    tls = {
+      source  = "hashicorp/tls"
+      version = "4.0.5"
+    }
+    random = {
+      source  = "hashicorp/random"
+      version = "3.1.0"
+    }
+  }
+  required_version = ">= 1.6.3"
+}
+
+
+
 provider "aws" {
   region = "ap-south-1"
   access_key = var.AWS_ACCESS_KEY
